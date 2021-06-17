@@ -67,14 +67,19 @@ const Header = styled.header`
 
 const CloseButton = styled.button`
   position: absolute;
-  top: -48px;
+  top: 0;
   right: 0;
   background: transparent;
   border: none;
   width: 48px;
   height: 48px;
   cursor: pointer;
-  color: white;
+  color: black;
+
+  @media (min-width: ${MOBILE_BREAKPOINT}px) {
+    top: -48px;
+    color: white;
+  }
 `;
 
 const Title = styled.h2`

@@ -9,7 +9,9 @@ import styled from "styled-components";
   We'll learn more about breakpoints in the
   upcoming lessons.
 */
-const MOBILE_BREAKPOINT = 550;
+const MOBILE_BREAKPOINT = 750;
+// the narrowest i can make Safari's window is 574px.
+// probably i should work out how to use its responsive design mode, assuming it has one.
 
 function Modal({
   title,
